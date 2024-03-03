@@ -60,15 +60,16 @@ The overall architecture of Crane is shown as below:
 
 <img alt="Crane Overview" height="550" src="docs/images/crane-arch.png"/>
 
-**Craned** 
+**Craned**
 
-Craned is the core component which manage the lifecycle of CRDs and APIs. It's deployed by a `Deployment` which consists of two container: 
+Craned is the core component which manage the lifecycle of CRDs and APIs. It's deployed by a `Deployment` which consists of two container:
+
 - Craned: Operators for management CRDs, WebApi for Dashboard, Predictors that provide query TimeSeries API.
 - Dashboard: Web component that built from TDesign's Starter, provide an easy-to-use UI for crane users.
 
 **Fadvisor**
 
-Fadvisor provides a collection of exporters which collect cloud resource pricing and billing data and ship to your monitoring system like Prometheus. Fadvisor support Multi-Cloud Pricing API by `Cloud Provider`. 
+Fadvisor provides a collection of exporters which collect cloud resource pricing and billing data and ship to your monitoring system like Prometheus. Fadvisor support Multi-Cloud Pricing API by `Cloud Provider`.
 
 **Metric Adapter**
 
@@ -92,12 +93,11 @@ Full documentation is available on the [Crane website](https://gocrane.io).
 
 - Slack(English): [https://gocrane.slack.com](https://join.slack.com/t/gocrane/shared_invite/zt-1rirt4xgk-N1ckyMW4acbPLWA8AemhxA)
 
-- Wechat Group (Chinese): 
+- Wechat Group (Chinese):
 
 <img alt="Wechat" src="https://github.com/gocrane/crane/assets/6251116/50997b45-187f-4e31-91e2-d679ea2b4bd0" title="Wechat" width="200"/>
 <img alt="Wechat" src="docs/images/wechat.jpeg" title="Wechat" width="200"/>
 Add it and Reply "Crane"，Robot will add you in Wechat group.
-
 
 - Bi-weekly Community Call(APAC, Chinese)
   - [Meeting Link](https://meeting.tencent.com/dm/ri7x8wCCEUut)
@@ -117,4 +117,3 @@ For how to start develop for Crane, you can check [developer's documentation](./
 ## Code of Conduct
 
 Crane adopts [CNCF Code of Conduct](https://github.com/cncf/foundation/blob/master/code-of-conduct.md).
-
