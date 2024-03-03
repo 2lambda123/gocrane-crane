@@ -1,10 +1,10 @@
 # Recommendation Definition
-- This proposal aims at definition for universal resource optimization. 
+
+- This proposal aims at definition for universal resource optimization.
 
 ## Table of Contents
 
 <!-- TOC -->
-
 
 <!-- /TOC -->
 
@@ -129,6 +129,7 @@ type Recommendation struct {
 ```
 
 Recommendation has some labels to indicate key information:
+
 1. RecommendationRule name
 2. RecommendationRule uid
 3. target uid
@@ -147,21 +148,19 @@ Use a constructive model for Recommendation.
 ```go
 
 type RecommendationSpec struct {
-	
+
 	Resource string  `json:"resource"`
-	
+
 	Value string `json:"value"`
-	
+
 	RecommendValue string `json:"recommendValue"`
-	
+
 	Action string `json:"action"`
-	
+
 }
 
 ```
 
-
 #### Risks and Mitigations
 
 1. Backward compatibility: Use v1alpha2 for above CRDs or Use new group? recommend.crane.io
-
